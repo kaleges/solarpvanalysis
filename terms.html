@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Solar PV Calc</title>
+    <title>Terms of Service - Solar PV Analysis</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #111; color: #e0e0e0; line-height: 1.6; }
         h1 { color: #f0a030; }
         h2 { color: #ccc; margin-top: 2em; }
+        h3 { color: #ddd; margin-top: 1em; }
         p, li { color: #aaa; }
         a { color: #f0a030; }
         .updated { color: #666; font-size: 0.9em; }
         .disclaimer { background: #2a1a0a; border: 2px solid #f0a030; border-radius: 12px; padding: 20px; margin: 20px 0; }
         .disclaimer p { color: #f0a030; font-weight: bold; }
+        .tier { background: #1a1a1a; border: 1px solid #333; border-radius: 8px; padding: 16px; margin: 12px 0; }
+        .tier h3 { margin-top: 0; }
+        .tier-pro h3 { color: #f0a030; }
+        .tier-business h3 { color: #7d4de0; }
     </style>
 </head>
 <body>
@@ -20,46 +25,127 @@
     <p class="updated">Last updated: February 2026</p>
 
     <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing, or using Solar PV Calc ("the App"), you agree to be bound by these Terms of Service.</p>
+    <p>By downloading, installing, or using Solar PV Analysis ("the App"), you agree to be bound by these Terms of Service. If you do not agree, do not use the App.</p>
 
     <h2>2. Description of Service</h2>
-    <p>Solar PV Calc is a pre-feasibility analysis tool that estimates solar photovoltaic energy production and financial returns based on satellite-derived solar irradiance data (NASA POWER) and user-provided parameters.</p>
+    <p>Solar PV Analysis is a pre-feasibility analysis tool that estimates solar photovoltaic energy production and financial returns based on satellite-derived solar irradiance data (NASA POWER) and user-provided parameters. The App is designed to assist with preliminary solar investment evaluation and is intended as an educational and informational tool.</p>
 
     <div class="disclaimer">
         <h2 style="color: #f0a030; margin-top: 0;">3. IMPORTANT DISCLAIMER</h2>
-        <p>SOLAR PV CALC IS A PRE-FEASIBILITY ESTIMATION TOOL ONLY.</p>
+        <p>SOLAR PV ANALYSIS IS A PRE-FEASIBILITY ESTIMATION TOOL ONLY.</p>
         <p>The results provided by this application are approximate estimates intended to support preliminary evaluation of solar PV investments. They should NOT be used as the sole basis for any investment, financial, or engineering decision.</p>
         <p>This tool does NOT replace professional solar site assessments, detailed engineering studies, or qualified financial advice. We strongly recommend consulting with certified solar energy professionals and financial advisors before making any investment commitment.</p>
         <p>KALE GES ENERJI URETIM LIMITED SIRKETI accepts no responsibility or liability for any investment decisions, financial outcomes, or losses arising from the use of this application.</p>
     </div>
 
     <h2>4. Accuracy of Results</h2>
-    <p>The calculations are estimates based on historical solar irradiance data and simplified PV models. Actual production may vary due to local weather, shading, panel quality, installation specifics, inverter efficiency, grid limitations, soiling, and maintenance. We make no guarantees regarding accuracy.</p>
+    <p>The calculations provided by the App are estimates based on:</p>
+    <ul>
+        <li>Historical solar irradiance data from NASA POWER (typical meteorological year)</li>
+        <li>Simplified PV production models with assumed system losses</li>
+        <li>User-provided financial parameters (system cost, electricity tariff, etc.)</li>
+    </ul>
+    <p>Actual solar energy production may vary significantly due to local weather variations, shading, panel quality, installation specifics, inverter efficiency, grid limitations, soiling, snow coverage, and maintenance practices. We make no guarantees regarding the accuracy, completeness, or reliability of any calculations or estimates provided by the App.</p>
 
     <h2>5. Not Professional Advice</h2>
-    <p>The App does NOT constitute financial, investment, engineering, legal, or tax advice. Always consult qualified professionals before making investment decisions.</p>
+    <p>The App does NOT constitute and should NOT be interpreted as:</p>
+    <ul>
+        <li>Financial or investment advice</li>
+        <li>Engineering or technical consulting</li>
+        <li>Legal or tax advice</li>
+        <li>A guarantee of solar system performance</li>
+        <li>A substitute for professional site assessment</li>
+    </ul>
+    <p>Always consult qualified solar energy professionals, financial advisors, and licensed engineers before making any investment decisions.</p>
 
     <h2>6. Subscriptions and Payments</h2>
-    <p>The App offers a free tier (1 analysis) and paid Pro subscriptions:</p>
-    <ul>
-        <li>Pro Monthly: $1.99 per month</li>
-        <li>Pro Yearly: $9.99 per year</li>
-    </ul>
-    <p>Subscriptions are billed through Apple's App Store and automatically renew unless cancelled at least 24 hours before the end of the current period. Manage subscriptions in iPhone Settings > Apple ID > Subscriptions.</p>
+    <p>The App offers a free tier and two paid subscription tiers:</p>
+
+    <div class="tier">
+        <h3>Free</h3>
+        <ul>
+            <li>1 solar analysis</li>
+            <li>Flat tariff mode only</li>
+            <li>Basic production estimate and financial summary</li>
+        </ul>
+    </div>
+
+    <div class="tier tier-pro">
+        <h3>Pro</h3>
+        <ul>
+            <li>Pro Monthly: $7.99 per month</li>
+            <li>Pro Yearly: $49.99 per year (Save 48%)</li>
+        </ul>
+        <p>Includes:</p>
+        <ul>
+            <li>Unlimited solar analyses</li>
+            <li>All tariff modes (TOU-2, TOU-3, Monthly)</li>
+            <li>Consumption and self-consumption analysis</li>
+            <li>Save/load tariff profiles</li>
+            <li>Full dashboard metrics (IRR, NPV, LCOE)</li>
+            <li>Share summary text</li>
+        </ul>
+    </div>
+
+    <div class="tier tier-business">
+        <h3>Business</h3>
+        <ul>
+            <li>Business Yearly: $99.99 per year</li>
+        </ul>
+        <p>Everything in Pro, plus:</p>
+        <ul>
+            <li>Professional PDF report export (A4 layout with custom logo, header, and footer)</li>
+            <li>8760 hourly CSV data export</li>
+            <li>Debt financing analysis (D/E ratio, interest rate, loan tenor)</li>
+            <li>Tax, inflation, and amortization modeling</li>
+            <li>Year-by-year cashflow statement with IRR, NPV, and DCF</li>
+            <li>Custom branding for client-facing reports</li>
+        </ul>
+    </div>
+
+    <p><strong>Auto-Renewable Subscriptions:</strong> All subscriptions are auto-renewable. Payment is charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period at the same price. You can manage and cancel your subscriptions by going to your iPhone Settings &gt; Apple ID &gt; Subscriptions.</p>
+
+    <p><strong>Free Trial:</strong> If offered, any unused portion of a free trial period will be forfeited when purchasing a subscription.</p>
+
+    <p><strong>Refunds:</strong> Refunds are handled by Apple according to their refund policy.</p>
+
+    <p><strong>On-Device Processing:</strong> PDF reports, CSV exports, and all financial calculations are generated entirely on your device. No calculation data is transmitted to external servers for processing.</p>
 
     <h2>7. Limitation of Liability</h2>
-    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, KALE GES ENERJI URETIM LIMITED SIRKETI SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM YOUR USE OF THE APP, ANY INVESTMENT DECISIONS BASED ON THE APP'S CALCULATIONS, OR ANY DIFFERENCES BETWEEN ESTIMATED AND ACTUAL SOLAR ENERGY PRODUCTION. YOU USE THE APP AT YOUR OWN RISK.</p>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:</p>
+    <p>KALE GES ENERJI URETIM LIMITED SIRKETI AND ITS AFFILIATES SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM:</p>
+    <ul>
+        <li>Your use of or inability to use the App</li>
+        <li>Any investment decisions made based on the App's calculations</li>
+        <li>Any differences between estimated and actual solar energy production</li>
+        <li>Any financial losses related to solar energy investments</li>
+        <li>Any errors or inaccuracies in the calculations</li>
+    </ul>
+    <p>YOU USE THE APP AND ITS RESULTS ENTIRELY AT YOUR OWN RISK.</p>
 
     <h2>8. User Responsibilities</h2>
-    <p>You are responsible for providing accurate input parameters, verifying results with professionals, maintaining account credentials, and complying with local laws.</p>
+    <p>You are responsible for:</p>
+    <ul>
+        <li>Providing accurate input parameters (system size, costs, tariff rates)</li>
+        <li>Verifying results with qualified professionals before making investment decisions</li>
+        <li>Maintaining the confidentiality of your account credentials</li>
+        <li>Complying with all applicable local laws and regulations</li>
+    </ul>
 
     <h2>9. Intellectual Property</h2>
-    <p>The App is the intellectual property of KALE GES ENERJI URETIM LIMITED SIRKETI. You may not copy, modify, or reverse-engineer any part of the App.</p>
+    <p>The App, including its design, code, calculations, and content, is the intellectual property of KALE GES ENERJI URETIM LIMITED SIRKETI. You may not copy, modify, distribute, or reverse-engineer any part of the App.</p>
 
-    <h2>10. Governing Law</h2>
-    <p>These Terms are governed by the laws of the Republic of Turkey. Disputes shall be resolved in the courts of Istanbul, Turkey.</p>
+    <h2>10. Account Termination</h2>
+    <p>We reserve the right to suspend or terminate your account if you violate these Terms. You may delete your account at any time from the App's Profile settings.</p>
 
-    <h2>11. Contact</h2>
+    <h2>11. Changes to Terms</h2>
+    <p>We may modify these Terms at any time. Continued use of the App after changes constitutes acceptance of the modified Terms. Material changes will be notified within the App.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>These Terms are governed by the laws of the Republic of Turkey. Any disputes shall be resolved in the courts of Istanbul, Turkey.</p>
+
+    <h2>13. Contact</h2>
+    <p>For questions about these Terms:</p>
     <p>KALE GES ENERJI URETIM LIMITED SIRKETI<br>Email: <a href="mailto:info@kaleges.com">info@kaleges.com</a></p>
 </body>
 </html>
